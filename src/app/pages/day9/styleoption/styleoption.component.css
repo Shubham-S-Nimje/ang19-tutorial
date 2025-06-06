@@ -1,0 +1,11 @@
+h2 {
+  background-color: purple;
+  padding: 0.5rem 1rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+section {
+  background-color: rgb(255, 186, 255);
+  font-family: Arial, sans-serif;
+}

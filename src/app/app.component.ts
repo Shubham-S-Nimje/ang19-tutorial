@@ -8,6 +8,7 @@ import { DatatypesComponent } from './pages/day5/datatypes/datatypes.component';
 import { CounterappComponent } from './pages/day6/counterapp/counterapp.component';
 import { EventsComponent } from './pages/day7/events/events.component';
 import { InputfieldvalueComponent } from './pages/day8/inputfieldvalue/inputfieldvalue.component';
+import { StyleoptionComponent } from './pages/day9/styleoption/styleoption.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { InputfieldvalueComponent } from './pages/day8/inputfieldvalue/inputfiel
     CounterappComponent,
     EventsComponent,
     InputfieldvalueComponent,
+    StyleoptionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
