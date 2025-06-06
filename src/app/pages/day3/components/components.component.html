@@ -1,0 +1,39 @@
+<section>
+  <h2>Components</h2>
+  <p>
+    In Angular, a <strong>component</strong> is a building block of the UI.
+    Every part of an Angular app like headers, menus, forms, or footers is made
+    using components.
+  </p>
+  <p>A component has three main parts:</p>
+  <ul>
+    <li><strong>HTML file</strong> - decides how it looks (template)</li>
+    <li><strong>CSS file</strong> - decides how it is styled</li>
+    <li><strong>TypeScript file</strong> - decides how it works (logic)</li>
+  </ul>
+
+  <h3>How to Create a Custom Component</h3>
+  <p>
+    You can create your own component using Angular CLI. Open your terminal and
+    run:
+  </p>
+  <pre><code>ng generate component component-name</code></pre>
+  <p>Example:</p>
+  <pre><code>ng generate component header</code></pre>
+  <p>This will create four files:</p>
+  <ul>
+    <li>header.component.ts</li>
+    <li>header.component.html</li>
+    <li>header.component.css</li>
+    <li>header.component.spec.ts (for testing)</li>
+  </ul>
+
+  <h3>How to Use the Component</h3>
+  <p>
+    You can use your custom component in any other template using its selector.
+    For example:
+  </p>
+  <pre><code>&lt;app-header&gt;&lt;/app-header&gt;</code></pre>
+
+  <p>That’s it! You’ve created and used a custom component in Angular.</p>
+</section>
