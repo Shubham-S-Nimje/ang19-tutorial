@@ -15,6 +15,7 @@ import { SwitchcaseComponent } from './pages/day12/switchcase/switchcase.compone
 import { ForloopComponent } from './pages/day13/forloop/forloop.component';
 import { SignalsComponent } from './pages/day14/signals/signals.component';
 import { DatatypewithsignalsComponent } from './pages/day15/datatypewithsignals/datatypewithsignals.component';
+import { ComputedsignalsComponent } from './pages/day16/computedsignals/computedsignals.component';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +36,7 @@ import { DatatypewithsignalsComponent } from './pages/day15/datatypewithsignals/
     ForloopComponent,
     SignalsComponent,
     DatatypewithsignalsComponent,
+    ComputedsignalsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
