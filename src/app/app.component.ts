@@ -10,6 +10,7 @@ import { EventsComponent } from './pages/day7/events/events.component';
 import { InputfieldvalueComponent } from './pages/day8/inputfieldvalue/inputfieldvalue.component';
 import { StyleoptionComponent } from './pages/day9/styleoption/styleoption.component';
 import { IfelseComponent } from './pages/day10/ifelse/ifelse.component';
+import { ElseifComponent } from './pages/day11/elseif/elseif.component';
 
 @Component({
   selector: 'app-root',
@@ -25,6 +26,7 @@ import { IfelseComponent } from './pages/day10/ifelse/ifelse.component';
     InputfieldvalueComponent,
     StyleoptionComponent,
     IfelseComponent,
+    ElseifComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

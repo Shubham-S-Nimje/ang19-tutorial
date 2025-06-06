@@ -1,0 +1,21 @@
+<section class="container m-4">
+  <h2>Else If</h2>
+
+  <div class="flex gap-2">
+    <div class="border border-black m-4">
+      <button (click)="clickHandler('red')">Click to Red</button>
+      <button (click)="clickHandler('green')">Click to Green</button>
+      <button (click)="clickHandler('yellow')">Click to Yellow</button>
+      <button (click)="clickHandler('black')">Click to Other</button
+      ><input type="text" (input)="getColor($event)" />
+
+      @if(display){
+      <div class="flex gap-2">
+        <p class="{{ colorName }} p-4 m-4 h-5 w-5"></p>
+      </div>
+      }
+    </div>
+  </div>
+
+  <hr />
+</section>
