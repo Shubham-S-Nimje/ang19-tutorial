@@ -14,6 +14,7 @@ import { ElseifComponent } from './pages/day11/elseif/elseif.component';
 import { SwitchcaseComponent } from './pages/day12/switchcase/switchcase.component';
 import { ForloopComponent } from './pages/day13/forloop/forloop.component';
 import { SignalsComponent } from './pages/day14/signals/signals.component';
+import { DatatypewithsignalsComponent } from './pages/day15/datatypewithsignals/datatypewithsignals.component';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +34,7 @@ import { SignalsComponent } from './pages/day14/signals/signals.component';
     SwitchcaseComponent,
     ForloopComponent,
     SignalsComponent,
+    DatatypewithsignalsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
