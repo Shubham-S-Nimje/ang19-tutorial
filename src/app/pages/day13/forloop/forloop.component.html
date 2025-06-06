@@ -1,0 +1,24 @@
+<section class="container m-4">
+  <h2>Foor loop</h2>
+  <hr />
+  <h3>Users List</h3>
+  <div class="flex flex-wrap gap-2">
+    @for(user of users; track user) {
+    <h3 class="text-lg text-purple p-2 bg-purple">{{ user }}</h3>
+    }
+  </div>
+  <hr />
+  <h3>Students List</h3>
+  <div class="flex flex-wrap gap-4">
+    @for(student of students; track student.name) {
+    <div class="w-10 p-2 bg-purple text-white rounded-lg border">
+      <h3 class="text-lg text-purple">{{ student.name }}</h3>
+      <p class="text-black">{{ student.age }}</p>
+      <p class="text-black">{{ student.city }}</p>
+      <button type="button" (click)="getName(student.name, student.email)">
+        Get Email
+      </button>
+    </div>
+    }
+  </div>
+</section>

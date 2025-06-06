@@ -12,6 +12,7 @@ import { StyleoptionComponent } from './pages/day9/styleoption/styleoption.compo
 import { IfelseComponent } from './pages/day10/ifelse/ifelse.component';
 import { ElseifComponent } from './pages/day11/elseif/elseif.component';
 import { SwitchcaseComponent } from './pages/day12/switchcase/switchcase.component';
+import { ForloopComponent } from './pages/day13/forloop/forloop.component';
 
 @Component({
   selector: 'app-root',
@@ -29,6 +30,7 @@ import { SwitchcaseComponent } from './pages/day12/switchcase/switchcase.compone
     IfelseComponent,
     ElseifComponent,
     SwitchcaseComponent,
+    ForloopComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
