@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { InterpolationComponent } from './pages/day1/interpolation/interpolation.component';
 import { AngularcliComponent } from './pages/day2/angularcli/angularcli.component';
 import { ComponentsComponent } from './pages/day3/components/components.component';
+import { BtnandfunctionComponent } from './pages/day4/btnandfunction/btnandfunction.component';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { ComponentsComponent } from './pages/day3/components/components.componen
     InterpolationComponent,
     AngularcliComponent,
     ComponentsComponent,
+    BtnandfunctionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

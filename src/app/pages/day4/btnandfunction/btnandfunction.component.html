@@ -1,0 +1,43 @@
+<section>
+  <h2>Buttons and Functions</h2>
+  <div>
+    <p>{{ number }}</p>
+    <button (click)="onClick()">Click</button>
+    <p>{{ text }}</p>
+  </div>
+  <hr />
+  <p>
+    In this example, we use a button to increase a number and call a function
+    when it reaches 5.
+  </p>
+
+  <h3>What Happens:</h3>
+  <ul>
+    <li>The value of <code>number</code> starts from 0.</li>
+    <li>
+      Every time you click the button, <code>number</code> increases by 1.
+    </li>
+    <li>
+      When the number reaches 5, another function is called that:
+      <ul>
+        <li>Resets the number back to 0</li>
+        <li>Shows the message: <strong>"Other function called"</strong></li>
+      </ul>
+    </li>
+    <li>If the number is not 5, the message is empty.</li>
+  </ul>
+
+  <h3>HTML Code:</h3>
+  <pre><code>
+&lt;section&gt;
+  &lt;h2&gt;Buttons and Functions&lt;/h2&gt;
+  &lt;p&gt;{{ number }}&lt;/p&gt;
+  &lt;button (click)="onClick()"&gt;Click&lt;/button&gt;
+  &lt;p&gt;{{ text }}&lt;/p&gt;
+&lt;/section&gt;
+  </code></pre>
+  <p>
+    This is a simple way to use <strong>functions</strong> and
+    <strong>events</strong> in Angular.
+  </p>
+</section>
