@@ -11,6 +11,7 @@ import { InputfieldvalueComponent } from './pages/day8/inputfieldvalue/inputfiel
 import { StyleoptionComponent } from './pages/day9/styleoption/styleoption.component';
 import { IfelseComponent } from './pages/day10/ifelse/ifelse.component';
 import { ElseifComponent } from './pages/day11/elseif/elseif.component';
+import { SwitchcaseComponent } from './pages/day12/switchcase/switchcase.component';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,7 @@ import { ElseifComponent } from './pages/day11/elseif/elseif.component';
     StyleoptionComponent,
     IfelseComponent,
     ElseifComponent,
+    SwitchcaseComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

@@ -1,0 +1,30 @@
+<section class="container m-4">
+  <h2>Switch Case</h2>
+  <div class="flex gap-2">
+    <button (click)="changeColor('red')">Click to Red</button>
+    <button (click)="changeColor('green')">Click to Green</button>
+    <button (click)="changeColor('yellow')">Click to Yellow</button>
+    <button (click)="changeColor('black')">Click to Other</button>
+  </div>
+  <div class="flex gap-2">
+    @switch(color) { @case('red') {
+    <div class="flex gap-2">
+      <p class="bg-{{ color }} p-4 m-4 h-5 w-5"></p>
+    </div>
+    } @case('green') {
+    <div class="flex gap-2">
+      <p class="bg-{{ color }} p-4 m-4 h-5 w-5"></p>
+    </div>
+    } @case('yellow') {
+    <div class="flex gap-2">
+      <p class="bg-{{ color }} p-4 m-4 h-5 w-5"></p>
+    </div>
+    } @default {
+    <div class="flex gap-2">
+      <p class="bg-{{ color }} p-4 m-4 h-5 w-5"></p>
+    </div>
+    } }
+  </div>
+
+  <hr />
+</section>
