@@ -1,0 +1,31 @@
+<section class="container m-4">
+  <h2>Loop Contextual Variable</h2>
+  <hr />
+  <div class="flex flex-wrap">
+    @for(user of users; track user){
+    <p
+      class="p-2 {{
+        $first ? 'bg-red text-white' : $last ? 'bg-black text-white' : ''
+      }}"
+    >
+      {{ $index + 1 }}. {{ user }}
+    </p>
+    } @empty {
+    <p>No record found</p>
+    }
+  </div>
+  <hr />
+  <div class="flex flex-wrap">
+    @for(user of users; track user; let i = $index){
+    <p
+      class="p-2 {{
+        $odd ? 'bg-purple text-white' : $even ? 'bg-yellow text-white' : ''
+      }}"
+    >
+      {{ i + 1 }}. {{ user }}
+    </p>
+    } @empty {
+    <p>No record found</p>
+    }
+  </div>
+</section>

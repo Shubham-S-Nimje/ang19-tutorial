@@ -17,6 +17,7 @@ import { SignalsComponent } from './pages/day14/signals/signals.component';
 import { DatatypewithsignalsComponent } from './pages/day15/datatypewithsignals/datatypewithsignals.component';
 import { ComputedsignalsComponent } from './pages/day16/computedsignals/computedsignals.component';
 import { EffectinngComponent } from './pages/day17/effectinng/effectinng.component';
+import { LoopcontextualComponent } from './pages/day18/loopcontextual/loopcontextual.component';
 
 @Component({
   selector: 'app-root',
@@ -39,6 +40,7 @@ import { EffectinngComponent } from './pages/day17/effectinng/effectinng.compone
     DatatypewithsignalsComponent,
     ComputedsignalsComponent,
     EffectinngComponent,
+    LoopcontextualComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
