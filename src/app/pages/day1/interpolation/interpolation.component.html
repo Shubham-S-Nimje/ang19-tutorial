@@ -1,12 +1,61 @@
 <section>
   <h2>Interpolation</h2>
+
+  <pre>
+    <code>
+import &#123; Component &#125; from '&#64;angular/core';
+
+&#64;Component(&#123;
+  selector: 'app-interpolation',
+  templateUrl: './interpolation.component.html',
+  styleUrls: ['./interpolation.component.css'
+&#125;)
+export class InterpolationComponent &#123;
+  x = 4;
+  y = 5;
+  user1 = 'Shubham';
+  user2 = 'Sanket';
+&#125;
+    </code>
+  </pre>
+
   <h3>{{ 2 + 2 }}</h3>
+  <p>
+    This expression calculates <code>2 + 2</code> and displays the result
+    <strong>4</strong>.
+  </p>
+
   <h3>{{ x + y }}</h3>
+  <p>
+    This displays the sum of two component variables <code>x</code> and
+    <code>y</code>.
+  </p>
 
   <h3>{{ x == y }}</h3>
+  <p>
+    This compares whether <code>x</code> is equal to <code>y</code> and displays
+    <strong>true</strong> or <strong>false</strong>.
+  </p>
 
   <h3>{{ user1 }}</h3>
+  <p>This displays the value of the variable <code>user1</code>.</p>
+
   <h3>{{ user2.toUpperCase() }}</h3>
+  <p>
+    This converts the string in <code>user2</code> to uppercase letters using a
+    built-in JavaScript string method.
+  </p>
+
   <h3>{{ "Hari".toUpperCase() }}</h3>
+  <p>
+    This displays the uppercase version of the string <code>"Hari"</code>, which
+    is <strong>HARI</strong>.
+  </p>
+
   <h3>{{ user1 == user2 }}</h3>
+  <p>
+    This compares whether the values of <code>user1</code> and
+    <code>user2</code> are the same and displays <strong>true</strong> or
+    <strong>false</strong>.
+  </p>
 </section>
