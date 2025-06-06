@@ -1,0 +1,27 @@
+<section class="container m-4">
+  <h2>Input Field Value</h2>
+  <div class="flex gap-2">
+    <input
+      (input)="getName($event)"
+      type="text"
+      value="{{ userName }}"
+      placeholder="Enter your user name"
+      class="p-2"
+    />
+    <button (click)="onButtonClick()">Get Value</button>
+    <button (click)="setName()">Set Value</button>
+  </div>
+  <hr />
+  <p>Template Reference</p>
+  <div class="flex gap-2">
+    <input
+      type="email"
+      value="{{ email }}"
+      #emailField
+      placeholder="Enter your user name"
+      class="p-2"
+    />
+    <button (click)="getEmail(emailField.value)">Get Email</button>
+    <button (click)="setEmail()">Set Email</button>
+  </div>
+</section>
