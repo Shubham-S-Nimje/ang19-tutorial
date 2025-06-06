@@ -1,0 +1,37 @@
+<section class="container m-4">
+  <h2>If Else | Hide Show | Toggle</h2>
+
+  <div class="flex gap-2">
+    <div class="border border-black m-4">
+      <button (click)="hideHandler1()">
+        Click to {{ display1 ? "Hide" : "Show" }}
+      </button>
+
+      @if(display1){
+      <div class="flex gap-2">
+        <p class="bg-green p-4 m-4 h-5 w-5"></p>
+      </div>
+      }
+    </div>
+
+    <hr />
+
+    <div class="border border-black m-4">
+      <button (click)="hideHandler2()">
+        Click to {{ display2 ? "Red" : "Green" }}
+      </button>
+
+      @if(display2){
+      <div class="flex gap-2">
+        <p class="bg-green p-4 m-4 h-5 w-5"></p>
+      </div>
+      } @else{
+      <div class="flex gap-2">
+        <p class="bg-red p-4 m-4 h-5 w-5"></p>
+      </div>
+      }
+    </div>
+  </div>
+
+  <hr />
+</section>

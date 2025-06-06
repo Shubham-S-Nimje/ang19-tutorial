@@ -9,6 +9,7 @@ import { CounterappComponent } from './pages/day6/counterapp/counterapp.componen
 import { EventsComponent } from './pages/day7/events/events.component';
 import { InputfieldvalueComponent } from './pages/day8/inputfieldvalue/inputfieldvalue.component';
 import { StyleoptionComponent } from './pages/day9/styleoption/styleoption.component';
+import { IfelseComponent } from './pages/day10/ifelse/ifelse.component';
 
 @Component({
   selector: 'app-root',
@@ -23,6 +24,7 @@ import { StyleoptionComponent } from './pages/day9/styleoption/styleoption.compo
     EventsComponent,
     InputfieldvalueComponent,
     StyleoptionComponent,
+    IfelseComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
