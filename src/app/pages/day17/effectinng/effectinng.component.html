@@ -1,0 +1,16 @@
+<section class="container m-4">
+  <h2>Effect in angular</h2>
+  <hr />
+  <div class="flex flex-wrap gap-2">
+    <p>{{ username() }}</p>
+    <button (click)="updateUsername()">Update X Value</button>
+  </div>
+  <hr />
+  <div class="m-4">
+    <p>{{ count() }}</p>
+    <button (click)="togleValue()">Update X Value</button>
+    @if(displayHeading){
+    <h3 class="bg-purple p-2 rounded-lg border">Page Heading</h3>
+    }
+  </div>
+</section>
