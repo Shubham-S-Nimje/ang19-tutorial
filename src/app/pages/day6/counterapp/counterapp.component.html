@@ -1,0 +1,43 @@
+<section>
+  <h2>Data Types</h2>
+  <div class="container m-4">
+    <p class="text-lg bg-gray p-4 rounded-full">{{ number }}</p>
+    <!-- <div class="flex gap-2">
+      <button
+        (click)="incrementClicked()"
+        class="bg-green text-white p-4 rounded-full"
+      >
+        Increment</button
+      ><button
+        (click)="decrementClicked()"
+        class="bg-red text-white p-4 rounded-full"
+      >
+        Decrement</button
+      ><button
+        (click)="resetClicked()"
+        class="bg-black text-white p-4 rounded-full"
+      >
+        Reset
+      </button>
+    </div> -->
+    <hr class="" />
+    <div class="flex gap-2">
+      <button
+        (click)="clickedHandler('increment')"
+        class="bg-green text-white p-4 rounded-full"
+      >
+        Increment</button
+      ><button
+        (click)="clickedHandler('decrement')"
+        class="bg-red text-white p-4 rounded-full"
+      >
+        Decrement</button
+      ><button
+        (click)="clickedHandler('reset')"
+        class="bg-black text-white p-4 rounded-full"
+      >
+        Reset
+      </button>
+    </div>
+  </div>
+</section>

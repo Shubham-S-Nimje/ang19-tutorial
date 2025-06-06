@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-lg {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.m-4 {
+  padding: 1rem;
+}
+
+.p-4 {
+  padding: 1rem;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-gray {
+  background-color: #cecece;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-red {
+  background-color: #dc3545;
+}
+
+.bg-green {
+  background-color: #28a745;
+}

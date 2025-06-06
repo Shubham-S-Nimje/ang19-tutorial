@@ -5,6 +5,7 @@ import { AngularcliComponent } from './pages/day2/angularcli/angularcli.componen
 import { ComponentsComponent } from './pages/day3/components/components.component';
 import { BtnandfunctionComponent } from './pages/day4/btnandfunction/btnandfunction.component';
 import { DatatypesComponent } from './pages/day5/datatypes/datatypes.component';
+import { CounterappComponent } from './pages/day6/counterapp/counterapp.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { DatatypesComponent } from './pages/day5/datatypes/datatypes.component';
     ComponentsComponent,
     BtnandfunctionComponent,
     DatatypesComponent,
+    CounterappComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
