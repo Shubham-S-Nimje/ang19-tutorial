@@ -13,6 +13,7 @@ import { IfelseComponent } from './pages/day10/ifelse/ifelse.component';
 import { ElseifComponent } from './pages/day11/elseif/elseif.component';
 import { SwitchcaseComponent } from './pages/day12/switchcase/switchcase.component';
 import { ForloopComponent } from './pages/day13/forloop/forloop.component';
+import { SignalsComponent } from './pages/day14/signals/signals.component';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +32,7 @@ import { ForloopComponent } from './pages/day13/forloop/forloop.component';
     ElseifComponent,
     SwitchcaseComponent,
     ForloopComponent,
+    SignalsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

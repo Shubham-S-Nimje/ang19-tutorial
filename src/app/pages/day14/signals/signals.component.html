@@ -1,0 +1,12 @@
+<section class="container m-4">
+  <h2>Signals</h2>
+  <hr />
+  <div class="flex flex-wrap gap-2">
+    <p>X: {{ x }}</p>
+    <button (click)="updateValue()">Increase Property</button>
+  </div>
+  <div class="flex flex-wrap gap-2">
+    <p>Count: {{ count() }}</p>
+    <button (click)="count.set(200)">Increase Value</button>
+  </div>
+</section>
