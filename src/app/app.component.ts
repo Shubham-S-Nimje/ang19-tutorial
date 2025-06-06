@@ -4,6 +4,7 @@ import { InterpolationComponent } from './pages/day1/interpolation/interpolation
 import { AngularcliComponent } from './pages/day2/angularcli/angularcli.component';
 import { ComponentsComponent } from './pages/day3/components/components.component';
 import { BtnandfunctionComponent } from './pages/day4/btnandfunction/btnandfunction.component';
+import { DatatypesComponent } from './pages/day5/datatypes/datatypes.component';
 
 @Component({
   selector: 'app-root',
@@ -13,6 +14,7 @@ import { BtnandfunctionComponent } from './pages/day4/btnandfunction/btnandfunct
     AngularcliComponent,
     ComponentsComponent,
     BtnandfunctionComponent,
+    DatatypesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
