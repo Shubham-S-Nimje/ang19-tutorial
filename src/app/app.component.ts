@@ -6,6 +6,7 @@ import { ComponentsComponent } from './pages/day3/components/components.componen
 import { BtnandfunctionComponent } from './pages/day4/btnandfunction/btnandfunction.component';
 import { DatatypesComponent } from './pages/day5/datatypes/datatypes.component';
 import { CounterappComponent } from './pages/day6/counterapp/counterapp.component';
+import { EventsComponent } from './pages/day7/events/events.component';
 
 @Component({
   selector: 'app-root',
@@ -17,6 +18,7 @@ import { CounterappComponent } from './pages/day6/counterapp/counterapp.componen
     BtnandfunctionComponent,
     DatatypesComponent,
     CounterappComponent,
+    EventsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

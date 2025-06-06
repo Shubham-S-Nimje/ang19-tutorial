@@ -1,0 +1,34 @@
+<section class="container m-4">
+  <h2>Events</h2>
+  <div class="flex gap-2">
+    <div>
+      <div
+        (mouseleave)="handleEvent($event)"
+        class="bg-red p-4 m-4 h-5 w-5"
+      ></div>
+      <div
+        (mouseenter)="handleEvent($event)"
+        class="bg-green p-4 m-4 h-5 w-5"
+      ></div>
+    </div>
+    <div>
+      <input (input)="handleEvent($event)" type="text" class="m-4" />
+      <br />
+      <input
+        (focus)="handleEvent($event)"
+        (blur)="handleEvent($event)"
+        type="text"
+        class="m-4"
+      />
+      <br />
+      <button
+        (click)="handleEvent($event)"
+        type="button"
+        name="clicked"
+        class="m-4"
+      >
+        Click
+      </button>
+    </div>
+  </div>
+</section>
