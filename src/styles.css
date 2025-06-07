@@ -33,6 +33,22 @@ hr {
   flex-direction: row;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -123,18 +139,6 @@ hr {
 
 .text-red {
   color: #dc3545;
-}
-
-.justify-start {
-  justify-content: flex-start;
-}
-
-.justify-center {
-  justify-content: center;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .text-start {

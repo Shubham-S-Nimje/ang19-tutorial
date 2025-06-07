@@ -1,0 +1,44 @@
+<section class="container m-4">
+  <h2
+    [style.backgroundColor]="bgColor"
+    [style.color]="textColor"
+    [style.fontSize.px]="fontSize"
+    [style.padding]="padding"
+  >
+    Dynamic Style
+  </h2>
+  <hr />
+  <div class="flex gap-4 justify-between items-center">
+    <div>
+      <h3>Background Color</h3>
+      <div class="flex flex-wrap gap-4">
+        <button (click)="backgroundColorChange('red')">Red</button>
+        <button (click)="backgroundColorChange('green')">Green</button>
+        <button (click)="backgroundColorChange('black')">Black</button>
+        <button (click)="backgroundColorChange('grey')">Grey</button>
+        <button (click)="backgroundColorChange('yellow')">Yellow</button>
+        <button (click)="backgroundColorChange('purple')">Purple</button>
+      </div>
+    </div>
+    <div>
+      <h3>Heading Color</h3>
+      <div class="flex flex-wrap gap-4">
+        <button (click)="textColorChange('red')">Red</button>
+        <button (click)="textColorChange('white')">White</button>
+        <button (click)="textColorChange('black')">Black</button>
+        <button (click)="textColorChange('purple')">Purple</button>
+      </div>
+    </div>
+    <div>
+      <h3>Font Size</h3>
+      <div class="flex flex-wrap gap-4">
+        <button (click)="fontChange('10')">10</button>
+        <button (click)="fontChange('20')">20</button>
+        <button (click)="fontChange('30')">30</button>
+        <button (click)="fontChange('40')">40</button>
+        <button (click)="fontChange('50')">50</button>
+        <button (click)="fontChange('60')">60</button>
+      </div>
+    </div>
+  </div>
+</section>
