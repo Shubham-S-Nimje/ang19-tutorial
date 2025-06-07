@@ -1,0 +1,45 @@
+<section class="container m-4">
+  <h2>To Do List</h2>
+  <div class="flex flex-wrap">
+    <input type="text" placeholder="Enter text" [(ngModel)]="task" />
+    <input type="datetime-local" [(ngModel)]="dateTime" />
+    <button type="button" (click)="addTaskHandler()" class="text-lg font-bold">
+      Add Task
+    </button>
+  </div>
+  @if(error !== ""){
+  <p class="text-red">{{ error }}</p>
+  }
+  <hr />
+  <table class="w-full text-start">
+    <thead>
+      <tr class="grid grid-cols-4 gap-4 justify-start items-center">
+        <th>No.</th>
+        <th class="text-start">Name</th>
+        <th class="text-start">Date/Time</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(task of taskList; track task.id; let i = $index){
+      <tr class="grid grid-cols-4 gap-4 justify-center items-center">
+        <td class="text-center">{{ task.id }}.</td>
+        <td>{{ task.task }}</td>
+        <td class="text-start">{{ task.date }}</td>
+        <td class="text-center">
+          <button
+            type="button"
+            (click)="deleteTaskHandler(task.id)"
+            class="p-2 cursor-pointer bg-red text-white rounded-lg"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+      } @empty {
+      <p class="text-center">No tasks available.</p>
+      }
+    </tbody>
+    <tbody></tbody>
+  </table>
+</section>

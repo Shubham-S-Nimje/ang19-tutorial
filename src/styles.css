@@ -25,6 +25,14 @@ hr {
   flex-wrap: wrap;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -111,4 +119,81 @@ hr {
 
 .text-black {
   color: #000;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  display: table-header-group;
+  border-bottom: #000000 1px solid;
+}
+
+tbody {
+  display: table-row-group;
+}
+
+tbody tr {
+  display: table-row;
+  padding: 1rem;
+  border-bottom: #a8a6a6 1px solid;
+}
+td {
+  display: table-cell;
+}
+th {
+  display: table-cell;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

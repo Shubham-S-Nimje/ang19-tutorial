@@ -19,6 +19,7 @@ import { ComputedsignalsComponent } from './components/day16/computedsignals/com
 import { EffectinngComponent } from './components/day17/effectinng/effectinng.component';
 import { LoopcontextualComponent } from './components/day18/loopcontextual/loopcontextual.component';
 import { TwowaybindingComponent } from './components/day19/twowaybinding/twowaybinding.component';
+import { TolistappComponent } from './pages/tolistapp/tolistapp.component';
 
 @Component({
   selector: 'app-root',
@@ -43,6 +44,7 @@ import { TwowaybindingComponent } from './components/day19/twowaybinding/twowayb
     EffectinngComponent,
     LoopcontextualComponent,
     TwowaybindingComponent,
+    TolistappComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
