@@ -42,6 +42,11 @@
     <app-forms *ngSwitchCase="'forms'"></app-forms>
     <app-formgroup *ngSwitchCase="'formgroup'"></app-formgroup>
     <app-tdforms *ngSwitchCase="'tdforms'"></app-tdforms>
+    <app-datatransfer
+      user="Shubham nimje"
+      [brother]="brother"
+      *ngSwitchCase="'datatransfer'"
+    ></app-datatransfer>
 
     <p *ngSwitchDefault class="text-gray-500">Component is not selected</p>
   </div>

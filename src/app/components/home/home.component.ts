@@ -32,6 +32,7 @@ import { DynamicroutingComponent } from '../day26/dynamicrouting/dynamicrouting.
 import { FormsComponent } from '../day28/forms/forms.component';
 import { FormgroupComponent } from '../day29/formgroup/formgroup.component';
 import { TdformsComponent } from '../day30/tdforms/tdforms.component';
+import { DatatransferComponent } from '../day31/datatransfer/datatransfer.component';
 
 @Component({
   selector: 'app-home',
@@ -66,12 +67,14 @@ import { TdformsComponent } from '../day30/tdforms/tdforms.component';
     FormsComponent,
     FormgroupComponent,
     TdformsComponent,
+    DatatransferComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
   selectedComponent = 'interpolation';
+  brother = 'Sanket nimje';
 
   componentsList = [
     { label: 'Interpolation', key: 'interpolation' },
@@ -100,6 +103,7 @@ export class HomeComponent {
     { label: 'Forms', key: 'forms' },
     { label: 'Form Group', key: 'formgroup' },
     { label: 'Template Driven Group', key: 'tdforms' },
+    { label: 'Parent to child Data Transfer', key: 'datatransfer' },
   ];
 
   showComponent(key: string) {
