@@ -8,6 +8,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 import { ChildComponent } from './components/day25/child/child.component';
 import { ProfileComponent } from './components/day25/profile/profile.component';
+import { DynamicuserComponent } from './components/day27/dynamicuser/dynamicuser.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,5 +20,6 @@ export const routes: Routes = [
     component: ProfileComponent,
     data: { name: 'Shubham Nimje' },
   },
+  { path: 'user/:id/:name/:age/:email', component: DynamicuserComponent },
   { path: '**', component: PagenotfoundComponent },
 ];

@@ -28,6 +28,7 @@ import {
   NgSwitchCase,
   NgSwitchDefault,
 } from '@angular/common';
+import { DynamicroutingComponent } from '../day26/dynamicrouting/dynamicrouting.component';
 
 @Component({
   selector: 'app-home',
@@ -58,6 +59,7 @@ import {
     DynamicstyleComponent,
     DirectivesComponent,
     RoutingComponent,
+    DynamicroutingComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -88,10 +90,11 @@ export class HomeComponent {
     { label: 'Dynamic Style', key: 'dynamicstyle' },
     { label: 'Directives', key: 'directives' },
     { label: 'Routing', key: 'routing' },
+    { label: 'Dynamic Routing', key: 'dynamicrouting' },
   ];
 
   showComponent(key: string) {
     this.selectedComponent = key;
-    console.log(this.selectedComponent);
+    // console.log(this.selectedComponent);
   }
 }
