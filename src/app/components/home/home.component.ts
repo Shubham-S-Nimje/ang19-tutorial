@@ -30,6 +30,7 @@ import {
 } from '@angular/common';
 import { DynamicroutingComponent } from '../day26/dynamicrouting/dynamicrouting.component';
 import { FormsComponent } from '../day28/forms/forms.component';
+import { FormgroupComponent } from '../day29/formgroup/formgroup.component';
 
 @Component({
   selector: 'app-home',
@@ -62,6 +63,7 @@ import { FormsComponent } from '../day28/forms/forms.component';
     RoutingComponent,
     DynamicroutingComponent,
     FormsComponent,
+    FormgroupComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -94,6 +96,7 @@ export class HomeComponent {
     { label: 'Routing', key: 'routing' },
     { label: 'Dynamic Routing', key: 'dynamicrouting' },
     { label: 'Forms', key: 'forms' },
+    { label: 'Form Group', key: 'formgroup' },
   ];
 
   showComponent(key: string) {

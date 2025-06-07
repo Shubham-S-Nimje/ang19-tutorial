@@ -1,0 +1,59 @@
+<section class="container">
+  <p class="text-lg">Forms</p>
+  <hr />
+  <form
+    action=""
+    method="post"
+    [formGroup]="profileForm"
+    (ngSubmit)="onSubmit()"
+    class="flex flex-col gap-4"
+  >
+    <input
+      class="p-2 rounded-lg"
+      type="text"
+      placeholder="Enter name"
+      formControlName="name"
+    />
+    <span class="text-red" *ngIf="name?.hasError('required')"
+      >Name is required</span
+    >
+    <span
+      class="text-red"
+      *ngIf="name?.invalid && (name?.dirty || name?.touched)"
+      >Name is required</span
+    >
+    <input
+      class="p-2 rounded-lg"
+      type="text"
+      placeholder="Enter email"
+      formControlName="email"
+    />
+    <span class="text-red" *ngIf="email?.hasError('required')"
+      >Email is required</span
+    >
+    <span
+      class="text-red"
+      *ngIf="email?.invalid && (email?.dirty || email?.touched)"
+      >Email is required</span
+    >
+    <input
+      class="p-2 rounded-lg"
+      type="text"
+      placeholder="Enter password"
+      formControlName="password"
+    />
+    <span class="text-red" *ngIf="password?.hasError('required')"
+      >Password is required</span
+    >
+    <span
+      class="text-red"
+      *ngIf="password?.invalid && (password?.dirty || password?.touched)"
+      >Password is required</span
+    >
+    <button type="submit" class="p-2 rounded-lg">Submit</button>
+  </form>
+  <div>
+    <p>{{ this.profileForm.value.name }}</p>
+    <p>{{ this.profileForm.value.email }}</p>
+  </div>
+</section>
