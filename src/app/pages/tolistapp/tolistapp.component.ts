@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-tolistapp',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './tolistapp.component.html',
   styleUrl: './tolistapp.component.css',
 })

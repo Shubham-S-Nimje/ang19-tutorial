@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { InterpolationComponent } from './components/day1/interpolation/interpolation.component';
 import { AngularcliComponent } from './components/day2/angularcli/angularcli.component';
 import { ComponentsComponent } from './components/day3/components/components.component';
@@ -22,6 +22,7 @@ import { TwowaybindingComponent } from './components/day19/twowaybinding/twowayb
 import { TolistappComponent } from './pages/tolistapp/tolistapp.component';
 import { DynamicstyleComponent } from './components/day21/dynamicstyle/dynamicstyle.component';
 import { DirectivesComponent } from './components/day22/directives/directives.component';
+import { RoutingComponent } from './components/day23/routing/routing.component';
 
 @Component({
   selector: 'app-root',
@@ -49,6 +50,7 @@ import { DirectivesComponent } from './components/day22/directives/directives.co
     TolistappComponent,
     DynamicstyleComponent,
     DirectivesComponent,
+    RoutingComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
