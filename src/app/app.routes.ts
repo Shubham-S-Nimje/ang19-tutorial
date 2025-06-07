@@ -5,9 +5,11 @@ import { InterpolationComponent } from './components/day1/interpolation/interpol
 import { RoutingComponent } from './components/day23/routing/routing.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'todo-app', component: TolistappComponent },
   { path: 'login', component: LoginComponent },
+  { path: '**', component: PagenotfoundComponent },
 ];
