@@ -31,6 +31,7 @@ import {
 import { DynamicroutingComponent } from '../day26/dynamicrouting/dynamicrouting.component';
 import { FormsComponent } from '../day28/forms/forms.component';
 import { FormgroupComponent } from '../day29/formgroup/formgroup.component';
+import { TdformsComponent } from '../day30/tdforms/tdforms.component';
 
 @Component({
   selector: 'app-home',
@@ -64,6 +65,7 @@ import { FormgroupComponent } from '../day29/formgroup/formgroup.component';
     DynamicroutingComponent,
     FormsComponent,
     FormgroupComponent,
+    TdformsComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -97,6 +99,7 @@ export class HomeComponent {
     { label: 'Dynamic Routing', key: 'dynamicrouting' },
     { label: 'Forms', key: 'forms' },
     { label: 'Form Group', key: 'formgroup' },
+    { label: 'Template Driven Group', key: 'tdforms' },
   ];
 
   showComponent(key: string) {
