@@ -6,10 +6,18 @@ import { RoutingComponent } from './components/day23/routing/routing.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { PagenotfoundComponent } from './pages/pagenotfound/pagenotfound.component';
+import { ChildComponent } from './components/day25/child/child.component';
+import { ProfileComponent } from './components/day25/profile/profile.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'todo-app', component: TolistappComponent },
+  { path: 'child', component: ChildComponent },
   { path: 'login', component: LoginComponent },
+  {
+    path: 'profile',
+    component: ProfileComponent,
+    data: { name: 'Shubham Nimje' },
+  },
   { path: '**', component: PagenotfoundComponent },
 ];

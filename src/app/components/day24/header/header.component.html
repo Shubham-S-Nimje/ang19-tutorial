@@ -15,15 +15,24 @@
       >
       <a
         routerLinkActive="active"
+        [routerLink]="['child', { name: 'Shubham Nimje' }]"
+        class="p-2 rounded-lg"
+        >Child</a
+      >
+      <a
+        routerLinkActive="active"
         routerLink="page-not-found"
         class="p-2 rounded-lg"
         >404</a
       >
     </div>
     <div>
-      <a routerLinkActive="active" routerLink="login" class="p-2 rounded-lg"
-        >Login</a
+      <a routerLinkActive="active" routerLink="profile" class="p-2 rounded-lg"
+        >Profile</a
       >
+      <button class="rounded-lg p-2 cursor-pointer" (click)="loginHandler()">
+        Login
+      </button>
     </div>
   </header>
 </section>
