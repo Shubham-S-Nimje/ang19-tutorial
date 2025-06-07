@@ -1,0 +1,44 @@
+<section class="container m-4">
+  <div class="flex gap-2 flex-wrap gap-2">
+    <button
+      *ngFor="let item of componentsList"
+      (click)="showComponent(item.key)"
+      class="rounded-lg {{ selectedComponent === item.key ? 'bg-purple' : '' }}"
+    >
+      {{ item.label }}
+    </button>
+  </div>
+  <hr />
+  <div [ngSwitch]="selectedComponent">
+    <app-interpolation *ngSwitchCase="'interpolation'"></app-interpolation>
+    <app-angularcli *ngSwitchCase="'angularcli'"></app-angularcli>
+    <app-components *ngSwitchCase="'components'"></app-components>
+    <app-btnandfunction *ngSwitchCase="'btnandfunction'"></app-btnandfunction>
+    <app-datatypes *ngSwitchCase="'datatypes'"></app-datatypes>
+    <app-counterapp *ngSwitchCase="'counterapp'"></app-counterapp>
+    <app-events *ngSwitchCase="'events'"></app-events>
+    <app-inputfieldvalue
+      *ngSwitchCase="'inputfieldvalue'"
+    ></app-inputfieldvalue>
+    <app-styleoption *ngSwitchCase="'styleoption'"></app-styleoption>
+    <app-ifelse *ngSwitchCase="'ifelse'"></app-ifelse>
+    <app-elseif *ngSwitchCase="'elseif'"></app-elseif>
+    <app-switchcase *ngSwitchCase="'switchcase'"></app-switchcase>
+    <app-forloop *ngSwitchCase="'forloop'"></app-forloop>
+    <app-signals *ngSwitchCase="'signals'"></app-signals>
+    <app-datatypewithsignals
+      *ngSwitchCase="'datatypewithsignals'"
+    ></app-datatypewithsignals>
+    <app-computedsignals
+      *ngSwitchCase="'computedsignals'"
+    ></app-computedsignals>
+    <app-effectinng *ngSwitchCase="'effectinng'"></app-effectinng>
+    <app-loopcontextual *ngSwitchCase="'loopcontextual'"></app-loopcontextual>
+    <app-twowaybinding *ngSwitchCase="'twowaybinding'"></app-twowaybinding>
+    <app-dynamicstyle *ngSwitchCase="'dynamicstyle'"></app-dynamicstyle>
+    <app-directives *ngSwitchCase="'directives'"></app-directives>
+    <app-routing *ngSwitchCase="'routing'"></app-routing>
+
+    <p *ngSwitchDefault class="text-gray-500">Component is not selected</p>
+  </div>
+</section>
