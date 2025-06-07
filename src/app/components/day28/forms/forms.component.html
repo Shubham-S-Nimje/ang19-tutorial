@@ -1,0 +1,25 @@
+<section class="container">
+  <p class="text-lg">Forms</p>
+  <hr />
+  <form action="" method="post" class="flex flex-col gap-4">
+    <input
+      class="p-2 rounded-lg"
+      type="text"
+      placeholder="Enter name"
+      [formControl]="name"
+    />
+    <input
+      class="p-2 rounded-lg"
+      type="text"
+      placeholder="Enter password"
+      [formControl]="password"
+    />
+    <button (click)="displayValue()" type="button" class="p-2 rounded-lg">
+      Login
+    </button>
+  </form>
+  <div>
+    <p>{{ name.value }}</p>
+    <p>{{ password.value }}</p>
+  </div>
+</section>
