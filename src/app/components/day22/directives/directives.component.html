@@ -1,0 +1,47 @@
+<section class="container m-4">
+  <h2>Directives</h2>
+  <hr />
+  <h3>*ngFor Directives</h3>
+  <div>
+    <ul>
+      <li *ngFor="let x of names">{{ x }}</li>
+    </ul>
+  </div>
+  <hr />
+  <h3>*ngFor Directives</h3>
+  <div>
+    <ul>
+      <li *ngFor="let x of students">
+        {{ x.name }}, {{ x.age }}yr, {{ x.city }}, {{ x.email }}
+      </li>
+    </ul>
+  </div>
+  <hr />
+  <h3>*ngIf Directives</h3>
+
+  <div class="flex flex-row gap-4">
+    <button (click)="showHandler()">
+      {{ show ? "Hide" : "Show" }} Heading
+    </button>
+  </div>
+  <h3 *ngIf="show">Heading</h3>
+  <hr />
+  <h3>*ngSwitch Directives</h3>
+
+  <div [ngSwitch]="color" class="flex flex-row gap-4">
+    <h3 *ngSwitchCase="'red'" class="p-2 rounded-lg bg-red">Heading</h3>
+    <h3 *ngSwitchCase="'green'" class="p-2 rounded-lg bg-green">Heading</h3>
+    <h3 *ngSwitchCase="'purple'" class="p-2 rounded-lg bg-purple">Heading</h3>
+    <h3 *ngSwitchCase="'gray'" class="p-2 rounded-lg bg-gray">Heading</h3>
+    <h3 *ngSwitchCase="'yellow'" class="p-2 rounded-lg bg-yellow">Heading</h3>
+    <h3 *ngSwitchDefault class="p-2 rounded-lg bg-white">Heading</h3>
+  </div>
+  <div class="flex flex-wrap gap-4">
+    <button (click)="backgroundColorChange('red')">Red</button>
+    <button (click)="backgroundColorChange('green')">Green</button>
+    <button (click)="backgroundColorChange('gray')">Grey</button>
+    <button (click)="backgroundColorChange('yellow')">Yellow</button>
+    <button (click)="backgroundColorChange('purple')">Purple</button>
+    <button (click)="backgroundColorChange('nocolor')">No color</button>
+  </div>
+</section>

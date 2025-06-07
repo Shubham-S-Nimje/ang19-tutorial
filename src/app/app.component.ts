@@ -21,6 +21,7 @@ import { LoopcontextualComponent } from './components/day18/loopcontextual/loopc
 import { TwowaybindingComponent } from './components/day19/twowaybinding/twowaybinding.component';
 import { TolistappComponent } from './pages/tolistapp/tolistapp.component';
 import { DynamicstyleComponent } from './components/day21/dynamicstyle/dynamicstyle.component';
+import { DirectivesComponent } from './components/day22/directives/directives.component';
 
 @Component({
   selector: 'app-root',
@@ -47,6 +48,7 @@ import { DynamicstyleComponent } from './components/day21/dynamicstyle/dynamicst
     TwowaybindingComponent,
     TolistappComponent,
     DynamicstyleComponent,
+    DirectivesComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
