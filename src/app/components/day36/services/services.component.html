@@ -1,0 +1,22 @@
+<section class="container">
+  <h3 class="text-lg">Services</h3>
+  <hr />
+  <button (click)="getProductData()">Load Product Data</button>
+  <div class="flex flex-wrap gap-4"></div>
+  <hr />
+  <div class="flex gap-4">
+    @for(product of productData; track product) {
+    <div class="bg-purple rounded-lg p-2">
+      <p>
+        {{ product.name }}
+      </p>
+      <p>
+        {{ product.brand }}
+      </p>
+      <p>
+        {{ product.price }}
+      </p>
+    </div>
+    }
+  </div>
+</section>

@@ -42,6 +42,8 @@ import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.
 import { ChildtoparentComponent } from '../day33/childtoparent/childtoparent.component';
 import { CustompipesComponent } from '../day34/custompipes/custompipes.component';
 import { CompopnentlifecycleComponent } from '../day35/compopnentlifecycle/compopnentlifecycle.component';
+import { ProductService } from '../../services/product.service';
+import { ServicesComponent } from '../day36/services/services.component';
 
 @Component({
   selector: 'app-home',
@@ -82,6 +84,7 @@ import { CompopnentlifecycleComponent } from '../day35/compopnentlifecycle/compo
     ChildtoparentComponent,
     CustompipesComponent,
     CompopnentlifecycleComponent,
+    ServicesComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -91,12 +94,21 @@ export class HomeComponent {
   brother = 'Sanket nimje';
   counter = 0;
 
+  productData:
+    | {
+        name: string;
+        brand: string;
+        price: number;
+      }[]
+    | undefined;
+
   @ViewChild('user') CompopnentlifecycleComponent: any;
 
-  constructor() {
+  constructor(private productService: ProductService) {
     afterRender(() => {
       console.log('afterRender', this.CompopnentlifecycleComponent?.counter);
     });
+
     afterNextRender(() => {
       console.log(
         'afterNextRender',
@@ -144,6 +156,7 @@ export class HomeComponent {
     { label: 'Child to parent', key: 'childtoparent' },
     { label: 'Custom Pipes', key: 'custompipes' },
     { label: 'Component life cycle', key: 'compopnentlifecycle' },
+    { label: 'Services', key: 'services' },
   ];
 
   showComponent(key: string) {
