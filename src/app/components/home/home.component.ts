@@ -33,6 +33,7 @@ import { FormsComponent } from '../day28/forms/forms.component';
 import { FormgroupComponent } from '../day29/formgroup/formgroup.component';
 import { TdformsComponent } from '../day30/tdforms/tdforms.component';
 import { DatatransferComponent } from '../day31/datatransfer/datatransfer.component';
+import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.component';
 
 @Component({
   selector: 'app-home',
@@ -68,6 +69,7 @@ import { DatatransferComponent } from '../day31/datatransfer/datatransfer.compon
     FormgroupComponent,
     TdformsComponent,
     DatatransferComponent,
+    ReusecomponentComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -104,6 +106,7 @@ export class HomeComponent {
     { label: 'Form Group', key: 'formgroup' },
     { label: 'Template Driven Group', key: 'tdforms' },
     { label: 'Parent to child Data Transfer', key: 'datatransfer' },
+    { label: 'Reuse Component', key: 'reusecomponent' },
   ];
 
   showComponent(key: string) {

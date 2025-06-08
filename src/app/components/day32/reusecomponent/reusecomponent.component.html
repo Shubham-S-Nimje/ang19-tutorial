@@ -1,0 +1,8 @@
+<section class="container">
+  <h3 class="text-lg">Reuse Component</h3>
+  <hr />
+  @for(user of users; track user) {
+  <app-child user="{{ user }}"></app-child>
+  }
+  <hr />
+</section>
