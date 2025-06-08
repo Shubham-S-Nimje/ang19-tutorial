@@ -52,6 +52,8 @@
       (getUser)="handleUser($event)"
       *ngSwitchCase="'childtoparent'"
     ></app-childtoparent>
+    <app-custompipes *ngSwitchCase="'custompipes'"></app-custompipes>
+
     <p *ngSwitchDefault class="text-gray-500">Component is not selected</p>
   </div>
   <hr />

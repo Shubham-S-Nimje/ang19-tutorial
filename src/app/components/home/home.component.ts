@@ -35,6 +35,7 @@ import { TdformsComponent } from '../day30/tdforms/tdforms.component';
 import { DatatransferComponent } from '../day31/datatransfer/datatransfer.component';
 import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.component';
 import { ChildtoparentComponent } from '../day33/childtoparent/childtoparent.component';
+import { CustompipesComponent } from '../day34/custompipes/custompipes.component';
 
 @Component({
   selector: 'app-home',
@@ -73,6 +74,7 @@ import { ChildtoparentComponent } from '../day33/childtoparent/childtoparent.com
     DatatransferComponent,
     ReusecomponentComponent,
     ChildtoparentComponent,
+    CustompipesComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -117,6 +119,7 @@ export class HomeComponent {
     { label: 'Parent to child Data Transfer', key: 'datatransfer' },
     { label: 'Reuse Component', key: 'reusecomponent' },
     { label: 'Child to parent', key: 'childtoparent' },
+    { label: 'Custom Pipes', key: 'custompipes' },
   ];
 
   showComponent(key: string) {
