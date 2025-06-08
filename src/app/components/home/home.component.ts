@@ -34,10 +34,12 @@ import { FormgroupComponent } from '../day29/formgroup/formgroup.component';
 import { TdformsComponent } from '../day30/tdforms/tdforms.component';
 import { DatatransferComponent } from '../day31/datatransfer/datatransfer.component';
 import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.component';
+import { ChildtoparentComponent } from '../day33/childtoparent/childtoparent.component';
 
 @Component({
   selector: 'app-home',
   imports: [
+    NgIf,
     NgFor,
     NgSwitch,
     NgSwitchCase,
@@ -70,6 +72,7 @@ import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.
     TdformsComponent,
     DatatransferComponent,
     ReusecomponentComponent,
+    ChildtoparentComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -77,6 +80,12 @@ import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.
 export class HomeComponent {
   selectedComponent = 'interpolation';
   brother = 'Sanket nimje';
+  user = {
+    name: 'Iron man',
+    age: 45,
+    city: 'New York',
+    email: 'ironman@gmail.com',
+  };
 
   componentsList = [
     { label: 'Interpolation', key: 'interpolation' },
@@ -107,10 +116,16 @@ export class HomeComponent {
     { label: 'Template Driven Group', key: 'tdforms' },
     { label: 'Parent to child Data Transfer', key: 'datatransfer' },
     { label: 'Reuse Component', key: 'reusecomponent' },
+    { label: 'Child to parent', key: 'childtoparent' },
   ];
 
   showComponent(key: string) {
     this.selectedComponent = key;
     // console.log(this.selectedComponent);
+  }
+
+  handleUser(user: any) {
+    this.user = user;
+    console.log(user);
   }
 }

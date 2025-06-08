@@ -1,0 +1,12 @@
+<section class="container">
+  <h3 class="text-lg">Child to parent</h3>
+  <hr />
+  <div class="flex flex-wrap gap-4">
+    @for(user of users; track user) {
+    <button (click)="getUser.emit(user)" class="bg-purple rounded-lg p-2">
+      {{ user.name }}
+    </button>
+    }
+  </div>
+  <hr />
+</section>

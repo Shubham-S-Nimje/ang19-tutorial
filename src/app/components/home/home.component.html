@@ -48,7 +48,20 @@
       *ngSwitchCase="'datatransfer'"
     ></app-datatransfer>
     <app-reusecomponent *ngSwitchCase="'reusecomponent'"></app-reusecomponent>
-
+    <app-childtoparent
+      (getUser)="handleUser($event)"
+      *ngSwitchCase="'childtoparent'"
+    ></app-childtoparent>
     <p *ngSwitchDefault class="text-gray-500">Component is not selected</p>
+  </div>
+  <hr />
+  <div *ngIf="selectedComponent == 'childtoparent'">
+    <h3 class="text-lg">This is parent component</h3>
+    <div>
+      <p class="text-gray-500">Name: {{ user.name }}</p>
+      <p class="text-gray-500">Age: {{ user.age }}yrs</p>
+      <p class="text-gray-500">City: {{ user.city }}</p>
+      <p class="text-gray-500">Email: {{ user.email }}</p>
+    </div>
   </div>
 </section>
