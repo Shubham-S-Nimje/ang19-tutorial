@@ -53,17 +53,36 @@
       *ngSwitchCase="'childtoparent'"
     ></app-childtoparent>
     <app-custompipes *ngSwitchCase="'custompipes'"></app-custompipes>
+    <ng-container *ngIf="counter !== 5">
+      <app-compopnentlifecycle
+        [counter]="counter"
+        #user
+        *ngSwitchCase="'compopnentlifecycle'"
+      ></app-compopnentlifecycle>
+    </ng-container>
 
-    <p *ngSwitchDefault class="text-gray-500">Component is not selected</p>
+    <p *ngSwitchDefault class="text-gray">Component is not selected</p>
   </div>
   <hr />
   <div *ngIf="selectedComponent == 'childtoparent'">
     <h3 class="text-lg">This is parent component</h3>
     <div>
-      <p class="text-gray-500">Name: {{ user.name }}</p>
-      <p class="text-gray-500">Age: {{ user.age }}yrs</p>
-      <p class="text-gray-500">City: {{ user.city }}</p>
-      <p class="text-gray-500">Email: {{ user.email }}</p>
+      <p class="text-gray">Name: {{ user.name }}</p>
+      <p class="text-gray">Age: {{ user.age }}yrs</p>
+      <p class="text-gray">City: {{ user.city }}</p>
+      <p class="text-gray">Email: {{ user.email }}</p>
+    </div>
+  </div>
+  <hr />
+  <div *ngIf="selectedComponent == 'compopnentlifecycle'">
+    <h3 class="text-lg">This is parent component</h3>
+    <div>
+      <button (click)="updateCounter()" class="text-gray">
+        Count: {{ counter }}
+      </button>
+      <!-- <p class="text-gray">Age: {{ user.age }}yrs</p>
+      <p class="text-gray">City: {{ user.city }}</p>
+      <p class="text-gray">Email: {{ user.email }}</p> -->
     </div>
   </div>
 </section>

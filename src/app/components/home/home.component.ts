@@ -1,4 +1,9 @@
-import { Component } from '@angular/core';
+import {
+  afterNextRender,
+  afterRender,
+  Component,
+  ViewChild,
+} from '@angular/core';
 import { InterpolationComponent } from '../day1/interpolation/interpolation.component';
 import { AngularcliComponent } from '../day2/angularcli/angularcli.component';
 import { ComponentsComponent } from '../day3/components/components.component';
@@ -36,6 +41,7 @@ import { DatatransferComponent } from '../day31/datatransfer/datatransfer.compon
 import { ReusecomponentComponent } from '../day32/reusecomponent/reusecomponent.component';
 import { ChildtoparentComponent } from '../day33/childtoparent/childtoparent.component';
 import { CustompipesComponent } from '../day34/custompipes/custompipes.component';
+import { CompopnentlifecycleComponent } from '../day35/compopnentlifecycle/compopnentlifecycle.component';
 
 @Component({
   selector: 'app-home',
@@ -75,6 +81,7 @@ import { CustompipesComponent } from '../day34/custompipes/custompipes.component
     ReusecomponentComponent,
     ChildtoparentComponent,
     CustompipesComponent,
+    CompopnentlifecycleComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -82,6 +89,22 @@ import { CustompipesComponent } from '../day34/custompipes/custompipes.component
 export class HomeComponent {
   selectedComponent = 'interpolation';
   brother = 'Sanket nimje';
+  counter = 0;
+
+  @ViewChild('user') CompopnentlifecycleComponent: any;
+
+  constructor() {
+    afterRender(() => {
+      console.log('afterRender', this.CompopnentlifecycleComponent?.counter);
+    });
+    afterNextRender(() => {
+      console.log(
+        'afterNextRender',
+        this.CompopnentlifecycleComponent?.counter
+      );
+    });
+  }
+
   user = {
     name: 'Iron man',
     age: 45,
@@ -120,6 +143,7 @@ export class HomeComponent {
     { label: 'Reuse Component', key: 'reusecomponent' },
     { label: 'Child to parent', key: 'childtoparent' },
     { label: 'Custom Pipes', key: 'custompipes' },
+    { label: 'Component life cycle', key: 'compopnentlifecycle' },
   ];
 
   showComponent(key: string) {
@@ -130,5 +154,9 @@ export class HomeComponent {
   handleUser(user: any) {
     this.user = user;
     console.log(user);
+  }
+
+  updateCounter() {
+    this.counter++;
   }
 }
