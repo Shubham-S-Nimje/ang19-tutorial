@@ -1,8 +1,22 @@
-# angularTutorial
+# Angular Tutorial 🚀
+
+A step-by-step Angular project created by following the YouTube tutorial series. Each topic is committed day-by-day, making it easy for beginners to learn Angular concepts with real code examples.
+
+---
+
+## 🔗 Live Demo
+
+👉 [View Deployed Project on GitHub Pages](https://shubham-s-nimje.github.io/angular-tutorial/)
+
+## 🎥 YouTube Tutorial
+
+📺 [Watch the Full Angular Tutorial Video](https://youtu.be/44b90hAMMIo?si=3eKkQAm282N8elpR)
+
+---
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
 
-## Development server
+## ✅ Development Server
 
 To start a local development server, run:
 
