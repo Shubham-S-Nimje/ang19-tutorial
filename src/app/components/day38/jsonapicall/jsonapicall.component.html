@@ -1,19 +1,120 @@
 <section class="container">
   <h3 class="text-lg">Json Api Call</h3>
   <hr />
-  <h4 class="text-lg">Users</h4>
+  <div>
+    <h4 class="text-lg text-center">Add User</h4>
+    <form
+      action=""
+      #userForm="ngForm"
+      (ngSubmit)="addUser(userForm?.value)"
+      class="flex flex-col gap-4"
+    >
+      <input
+        class="p-2 rounded-lg"
+        type="text"
+        name="name"
+        placeholder="Enter name"
+        ngModel
+      />
+      <input
+        class="p-2 rounded-lg"
+        type="number"
+        name="age"
+        placeholder="Enter age"
+        ngModel
+      />
+      <input
+        class="p-2 rounded-lg"
+        type="text"
+        name="email"
+        placeholder="Enter email"
+        ngModel
+      />
+      <button class="p-2 rounded-lg bg-green text-white" type="submit">
+        Add User
+      </button>
+    </form>
+  </div>
+  <hr />
+  <h4 class="text-lg">Users list</h4>
   <div class="container mx-4 grid grid-cols-4 gap-4">
     @for(user of usersList; track user.id) {
-    <div class="">
+    <div class="flex flex-col gap-2">
       <div class="mx-4 border rounded-lg">
         <p class="text-start text-red font-bold">
           {{ user.name }} <span>({{ user.age }} yrs)</span>
         </p>
+        <p class="">User Id: {{ user.id }}</p>
         <p class="">Email: {{ user.email }}</p>
+      </div>
+      <div class="flex gap-2 justify-center items-center">
+        <button
+          class="m-4 p-2 rounded-lg bg-red text-white cursor-pointer"
+          type="button"
+          (click)="deleteUser(user.id)"
+        >
+          Remove User
+        </button>
+        <button
+          class="m-4 p-2 rounded-lg bg-yellow cursor-pointer"
+          type="button"
+          (click)="updateUser(user.id)"
+        >
+          Update User
+        </button>
       </div>
     </div>
     } @empty {
     <h4 class="text-lg">No users found</h4>
     }
+  </div>
+
+  <!-- Popup update user form -->
+  <div *ngIf="selectedUser" class="glass-bg">
+    <div class="form-popup">
+      <h4 class="text-lg text-center">UpdateUser</h4>
+      <form
+        action=""
+        #userUpdateForm="ngForm"
+        (ngSubmit)="updateUserById(userUpdateForm?.value)"
+        class="flex flex-col gap-4"
+      >
+        <input
+          class="p-2 rounded-lg"
+          type="text"
+          name="name"
+          placeholder="Enter name"
+          [ngModel]="selectedUser.name"
+        />
+        <input
+          class="p-2 rounded-lg"
+          type="number"
+          name="age"
+          placeholder="Enter age"
+          [ngModel]="selectedUser.age"
+        />
+        <input
+          class="p-2 rounded-lg"
+          type="text"
+          name="email"
+          placeholder="Enter email"
+          [ngModel]="selectedUser.email"
+        />
+        <button
+          class="p-2 rounded-lg bg-green text-white cursor-pointer"
+          type="submit"
+        >
+          Update User
+        </button>
+        <hr />
+        <button
+          (click)="closePopup()"
+          class="p-2 rounded-lg bg-red text-white cursor-pointer"
+          type="button"
+        >
+          Close
+        </button>
+      </form>
+    </div>
   </div>
 </section>

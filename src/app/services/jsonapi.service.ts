@@ -14,4 +14,20 @@ export class JsonapiService {
   getUsersList(): Observable<User[]> {
     return this.http.get<User[]>(this.apiUrl);
   }
+
+  addUser(user: User): Observable<User> {
+    return this.http.post<User>(this.apiUrl, user);
+  }
+
+  deleteUser(userId: string) {
+    return this.http.delete(`${this.apiUrl}/${userId}`);
+  }
+
+  getUserById(userId: string) {
+    return this.http.get<User>(`${this.apiUrl}/${userId}`);
+  }
+
+  updateUserById(userId: string, user: User) {
+    return this.http.put(`${this.apiUrl}/${userId}`, user);
+  }
 }
