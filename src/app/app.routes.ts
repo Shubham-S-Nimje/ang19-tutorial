@@ -20,6 +20,12 @@ export const routes: Routes = [
     component: ProfileComponent,
     data: { name: 'Shubham Nimje' },
   },
-  { path: 'user/:id/:name/:age/:email', component: DynamicuserComponent },
+  {
+    path: 'user/:id/:name/:age/:email',
+    loadComponent: () =>
+      import('./components/day27/dynamicuser/dynamicuser.component').then(
+        (c) => c.DynamicuserComponent
+      ),
+  },
   { path: '**', component: PagenotfoundComponent },
 ];

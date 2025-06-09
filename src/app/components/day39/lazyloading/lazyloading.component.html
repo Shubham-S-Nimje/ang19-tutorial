@@ -1,0 +1,15 @@
+<section class="container">
+  <h2>Lazy loading</h2>
+  <hr />
+  <div class="flex flex-wrap gap-4">
+    @for(user of users; track user.id){
+    <a
+      routerLink="/user/{{ user.id }}/{{ user.name }}/{{ user.age }}/{{
+        user.email
+      }}"
+      class="text-lg"
+      >{{ user?.name }}</a
+    >
+    }
+  </div>
+</section>

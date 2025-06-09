@@ -46,6 +46,7 @@ import { ProductService } from '../../services/product.service';
 import { ServicesComponent } from '../day36/services/services.component';
 import { ApicallComponent } from '../day37/apicall/apicall.component';
 import { JsonapicallComponent } from '../day38/jsonapicall/jsonapicall.component';
+import { LazyloadingComponent } from '../day39/lazyloading/lazyloading.component';
 
 @Component({
   selector: 'app-home',
@@ -89,6 +90,7 @@ import { JsonapicallComponent } from '../day38/jsonapicall/jsonapicall.component
     ServicesComponent,
     ApicallComponent,
     JsonapicallComponent,
+    LazyloadingComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -163,6 +165,7 @@ export class HomeComponent {
     { label: 'Services', key: 'services' },
     { label: 'Api Call', key: 'apicall' },
     { label: 'Json Api Call', key: 'jsonapicall' },
+    { label: 'Lazy loading', key: 'lazyloading' },
   ];
 
   showComponent(key: string) {
