@@ -7,7 +7,7 @@ export class CurrencyConverterPipe implements PipeTransform {
   transform(value: number, ...args: number[]): unknown {
     if (args.length > 0) {
       let [currencyValue] = args;
-      return value * currencyValue;
+      return (value * currencyValue).toFixed(2);
     } else {
       return value * 85.8;
     }

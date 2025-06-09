@@ -44,6 +44,7 @@ import { CustompipesComponent } from '../day34/custompipes/custompipes.component
 import { CompopnentlifecycleComponent } from '../day35/compopnentlifecycle/compopnentlifecycle.component';
 import { ProductService } from '../../services/product.service';
 import { ServicesComponent } from '../day36/services/services.component';
+import { ApicallComponent } from '../day37/apicall/apicall.component';
 
 @Component({
   selector: 'app-home',
@@ -85,6 +86,7 @@ import { ServicesComponent } from '../day36/services/services.component';
     CustompipesComponent,
     CompopnentlifecycleComponent,
     ServicesComponent,
+    ApicallComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -157,6 +159,7 @@ export class HomeComponent {
     { label: 'Custom Pipes', key: 'custompipes' },
     { label: 'Component life cycle', key: 'compopnentlifecycle' },
     { label: 'Services', key: 'services' },
+    { label: 'Api Call', key: 'apicall' },
   ];
 
   showComponent(key: string) {

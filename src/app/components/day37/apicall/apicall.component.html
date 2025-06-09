@@ -1,0 +1,35 @@
+<section class="container">
+  <h3 class="text-lg">Api Call</h3>
+  <hr />
+  <h4 class="text-lg">Products</h4>
+  <div class="container mx-4 grid grid-cols-6 gap-4">
+    @for(product of productList; track product.id) {
+    <div class="card">
+      <img
+        src="{{ product.thumbnail }}"
+        alt="Denim Jeans"
+        style="width: 100%"
+      />
+      <div class="mx-4">
+        <p class="text-start text-red text-sm">{{ product.brand }}</p>
+        <h3 class="line-clamp-1 text-start">{{ product.title }}</h3>
+        <p class="price line-clamp-1">
+          {{ product.price }}$
+          <span class="text-red text-sm"
+            >({{ product.discountPercentage }}% off)</span
+          >
+        </p>
+        <p class="price line-clamp-1">
+          {{ product.price | currencyConverter : 83 }}₹
+        </p>
+        <p class="text-start line-clamp-2">
+          {{ product.description }}
+        </p>
+      </div>
+      <p><button>Add to Cart</button></p>
+    </div>
+    } @empty {
+    <h4 class="text-lg">No products found</h4>
+    }
+  </div>
+</section>

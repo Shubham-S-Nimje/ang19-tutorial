@@ -20,6 +20,11 @@ hr {
   font-weight: bold;
 }
 
+.text-sm {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
 }
@@ -74,6 +79,10 @@ hr {
 
 .m-2 {
   padding: 0.5rem;
+}
+
+.mx-4 {
+  padding: 0rem 1rem;
 }
 
 .p-4 {
@@ -203,4 +212,25 @@ th {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.line-clamp-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
 }
