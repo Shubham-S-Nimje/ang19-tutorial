@@ -45,6 +45,7 @@ import { CompopnentlifecycleComponent } from '../day35/compopnentlifecycle/compo
 import { ProductService } from '../../services/product.service';
 import { ServicesComponent } from '../day36/services/services.component';
 import { ApicallComponent } from '../day37/apicall/apicall.component';
+import { JsonapicallComponent } from '../day38/jsonapicall/jsonapicall.component';
 
 @Component({
   selector: 'app-home',
@@ -87,6 +88,7 @@ import { ApicallComponent } from '../day37/apicall/apicall.component';
     CompopnentlifecycleComponent,
     ServicesComponent,
     ApicallComponent,
+    JsonapicallComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
@@ -160,6 +162,7 @@ export class HomeComponent {
     { label: 'Component life cycle', key: 'compopnentlifecycle' },
     { label: 'Services', key: 'services' },
     { label: 'Api Call', key: 'apicall' },
+    { label: 'Json Api Call', key: 'jsonapicall' },
   ];
 
   showComponent(key: string) {

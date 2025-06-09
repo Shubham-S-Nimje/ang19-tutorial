@@ -52,6 +52,14 @@ For end-to-end (e2e) testing, run:
 ng e2e
 ```
 
+## Running json-server
+
+To start a json-server, run:
+
+```bash
+npm run start:json-server
+```
+
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
 ## Additional Resources

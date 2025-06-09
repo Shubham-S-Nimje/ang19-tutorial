@@ -1,0 +1,45 @@
+{
+  "users": [
+    { "id": "1", "name": "Iron Man", "age": 45, "email": "ironman@gmail.com" },
+    {
+      "id": "2",
+      "name": "Captain America",
+      "age": 105,
+      "email": "captainamerica@gmail.com"
+    },
+    { "id": "3", "name": "Thor", "age": 1500, "email": "thor@gmail.com" },
+    { "id": "4", "name": "Hulk", "age": 49, "email": "hulk@gmail.com" },
+    {
+      "id": "5",
+      "name": "Black Widow",
+      "age": 35,
+      "email": "blackwidow@gmail.com"
+    },
+    { "id": "6", "name": "Hawkeye", "age": 41, "email": "hawkeye@gmail.com" },
+    {
+      "id": "7",
+      "name": "Spider-Man",
+      "age": 18,
+      "email": "spiderman@gmail.com"
+    },
+    {
+      "id": "8",
+      "name": "Doctor Strange",
+      "age": 42,
+      "email": "doctorstrange@gmail.com"
+    },
+    {
+      "id": "9",
+      "name": "Black Panther",
+      "age": 39,
+      "email": "blackpanther@gmail.com"
+    },
+    {
+      "id": "10",
+      "name": "Scarlet Witch",
+      "age": 33,
+      "email": "scarletwitch@gmail.com"
+    },
+    { "id": "11", "name": "Vision", "age": 5, "email": "vision@gmail.com" }
+  ]
+}

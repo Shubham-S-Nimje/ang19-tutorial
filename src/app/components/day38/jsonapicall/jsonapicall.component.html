@@ -1,0 +1,19 @@
+<section class="container">
+  <h3 class="text-lg">Json Api Call</h3>
+  <hr />
+  <h4 class="text-lg">Users</h4>
+  <div class="container mx-4 grid grid-cols-4 gap-4">
+    @for(user of usersList; track user.id) {
+    <div class="">
+      <div class="mx-4 border rounded-lg">
+        <p class="text-start text-red font-bold">
+          {{ user.name }} <span>({{ user.age }} yrs)</span>
+        </p>
+        <p class="">Email: {{ user.email }}</p>
+      </div>
+    </div>
+    } @empty {
+    <h4 class="text-lg">No users found</h4>
+    }
+  </div>
+</section>
